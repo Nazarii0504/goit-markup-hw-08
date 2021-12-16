@@ -1,0 +1,30 @@
+.client {
+    display: flex;
+    justify-content: center;
+  }
+  .client__link {
+    @include aligin-list();
+    width: 170px;
+    height: 92px;
+    border: 1px solid $fill;
+    fill:$fill;
+  border-radius: 4px;
+  transition: fill 250ms $animation-cubic-bezier,
+  border-color 250ms $animation-cubic-bezier;
+  }
+  .section-client {
+    margin-bottom: 50px;
+  }
+  .client__link--show:focus,
+  .client__link--show:hover {
+    fill: $acent-color;
+    border-color: $acent-color;
+  }
+  .client__block:not(:last-child) {
+    margin-right: 30px;
+  }
+  
+  .client__icon {
+    width: 106px;
+    height: 60px;
+  }

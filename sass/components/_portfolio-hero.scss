@@ -1,0 +1,35 @@
+.hero__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+  .hero__btn {
+    padding-top: 6px;
+    padding-right: 22px;
+    padding-bottom: 6px;
+    padding-left: 22px;
+    border-radius: 4px;
+    color: $main-text-color;
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    background-color: #f5f4fa;
+    transition: color 250ms $animation-cubic-bezier,
+    background-color 250ms $animation-cubic-bezier;
+    cursor: pointer;
+  
+  &:focus {
+    color: $third-text-color;
+    background-color: $acent-color;}
+    &:hover {
+      color: $third-text-color;
+      background-color: $acent-color;
+    }
+  }
+  .hero__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  
+ 

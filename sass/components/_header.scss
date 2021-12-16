@@ -1,0 +1,117 @@
+.flex-box {
+    display: flex;
+    align-items: center;
+  }
+  .navig {
+    display: flex;
+    align-items: center;
+  }
+  .navig__list {
+    display: flex;
+    margin-left: 93px;
+  }
+  .navig__item:not(:last-child) {
+    margin-right: 50px;
+  
+  &{
+    position: relative;
+  }}
+  .logo {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.19;
+  
+  &__left {
+    color: $acent-color;
+  }
+&__right {
+    color: $other-color;
+  }}
+  .navig__link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $main-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+  &:hover,
+  &:focus {
+    color: $acent-color;
+  }
+}
+  
+  .current {
+    color:$acent-color;
+  }
+  
+  .current-portfolio::after,
+  .current-studio::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+     border-radius: 4px;
+    height: 4px;
+  
+    background-color:$acent-color;
+    transition: background-color 250ms $animation-cubic-bezier;
+  }
+  
+  .current-studio::after {
+    width: 100%;
+  }
+  
+  .current-portfolio::after {
+    width: 100%;
+  }
+  
+  
+  
+  
+  
+  
+  .address {
+    display: flex;
+    margin-left: auto;
+  }
+  .address__list {
+    display: flex;
+    align-items: center;
+  
+  &:not(:last-child) {
+    margin-right: 43px;
+  }}
+  .address__link:hover,
+  .address__link:focus {
+    color: $acent-color;}
+  
+    .address__link{
+    color: $second-text-color;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    transition: color 250ms $animation-cubic-bezier;
+  }
+  .address__email {
+    vertical-align: middle;
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .address__phone {
+    vertical-align: middle;
+    margin-right: 10px;
+    height: 16px;
+    width: 10px;
+    fill: currentColor;
+  }
+  .address__phone:hover {
+    color: $acent-color;
+  }
+  .object {
+    border-bottom: 1px solid #ececec;
+  }
