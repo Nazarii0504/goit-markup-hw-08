@@ -290,6 +290,7 @@ button {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 p,
@@ -501,7 +502,7 @@ body {
 }
 
 .navig__list .navig__link {
-  font-weight: 500;
+  font-weight: 500px;
   font-size: 40px;
   line-height: 1.17;
   letter-spacing: 0.02em;
@@ -555,7 +556,7 @@ body {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: #212121;
+  color: #ffffff;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -614,7 +615,7 @@ body {
   font-size: 24px;
   line-height: 1.16;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 767px) {
@@ -669,11 +670,11 @@ body {
     margin-right: 8px;
     fill: currentColor;
   }
-  .address__icon .address__icon--email {
+  .address__icon--email {
     width: 14px;
     height: 10px;
   }
-  .address__icon .address__icon--phone {
+  .address__icon--phone {
     width: 10px;
     height: 14px;
   }
@@ -683,15 +684,14 @@ body {
   .address__icon {
     margin-right: 10px;
   }
-  .address__icon .address__icon--email {
+  .address__icon--email {
     width: 16px;
     height: 12px;
   }
-  .address__icon .address__icon--phone {
+  .address__icon--phone {
     height: 16px;
   }
-  .address__icon .address__icon--phone:hover,
-  .address__icon .address__icon--phone:focus {
+  .address__icon:hover, .address__icon:focus {
     fill: #2196f3;
   }
 }
@@ -755,6 +755,12 @@ body {
     height: 4px;
     background-color: #2196f3;
   }
+}
+
+.address__icon--phone {
+  height: 14px;
+  width: 14px;
+  outline: 2px yellow solid;
 }
 
 .hero__list {

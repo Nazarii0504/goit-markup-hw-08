@@ -1,8 +1,9 @@
 
-@import './base/normalize';
 @import './utils/variables';
+@import './base/normalize';
 @import './base/reset';
 @import './base/general';
+@import './utils/mixin';
 @import './components/header';
 @import './components/hero';
 @import './components/about';
@@ -11,6 +12,6 @@
 @import './components/client';
 @import './components/footer';
 @import './components/backdrop';
-@import './utils/mixin';
+
 
 
