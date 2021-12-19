@@ -19,31 +19,81 @@
 <body>
     <header class="object" >
         <div class="container flex-box">
+        <div class="logo-wrap">
         <a href="" class="logo"><span class="logo__left">Web</span><span class="logo__right">Studio</span></a>
+        
+        
+        <button
+        class="burger-btn js-open-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="header-wrap"
+        data-menu-button
+      >
+        <svg aria-label="кнопка мобильного меню" width="40" height="40">
+          <use class="icon__open-burger" href="./images/icons.svg#open-burger"></use>
+        </svg>
+      </button>
+    </div>
+
+    <div class="header-wrap js-menu-container" id="header-wrap" data-menu>
+      <button
+        class="burger-btn burger-btn__close js-close-menu"
+        type="button"
+        aria-expanded="false"
+        aria-controls="header-wrap"
+        data-menu-button
+      >
+        <svg aria-label="кнопка мобильного меню" width="40" height="40">
+          <use class="icon__close-burger" href="./images/icons.svg#close-burger"></use>
+        </svg>
+      </button>   
+        
+        
+      <div class="heder__iner">
         <nav class="navig">
             <ul class="navig__list">
                 <li class="navig__item">
-                    <a class="navig__link current current-studio" href="">Студия</a></li>
+                    <a class="navig__link current current--active" href="">Студия</a></li>
                 <li class="navig__item">
                     <a class="navig__link" href="./portfolio.html" >Портфолио</a></li>
                 <li class="navig__item">
                     <a class="navig__link" href="" >Контакты</a></li>
             </ul>
         </nav>
-
+       
         <ul class="address">
             <li class="address__list">
                 <a class="address__link"  href="mailto:info@devstudio.com" >
-                     <svg class="address__email" ><use href="./images/icons.svg#envelope-hover"></use>
+                     <svg class="address__icon address__icon--email" ><use href="./images/icons.svg#envelope-hover"></use>
 
                 </svg> info@devstudio.com</a>
             </li>
             <li class="address__list"><a class="address__link" href="tel:+380961111111" >
-                <svg class="address__phone">
+                <svg class="address__icon address__icon--phone">
                 <use href="./images/icons.svg#vector"></use>
             </svg> +38 096 111 11 11</a></li>
         </ul>
+        <ul class="header-social">
+            <li class="header-social__item">
+              <a class="header-social__link" href="">Instagram</a>
+            </li>
+
+            <li class="header-social__item">
+              <a class="header-social__link" href="">Twitter</a>
+            </li>
+
+            <li class="header-social__item">
+              <a class="header-social__link" href="">Facebook</a>
+            </li>
+
+            <li class="header-social__item">
+              <a class="header-social__link" href="">LinkedIn</a>
+            </li>
+          </ul>
         </div>
+    </div>
+</div>
     </header>
     <main>
         <section class="upmain ">
