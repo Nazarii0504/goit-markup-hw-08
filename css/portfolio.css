@@ -401,7 +401,6 @@ body {
 
 .burger-btn {
   display: block;
-  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;

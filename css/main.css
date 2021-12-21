@@ -401,7 +401,6 @@ body {
 
 .burger-btn {
   display: block;
-  margin-left: auto;
   padding: 0;
   background-color: transparent;
   cursor: pointer;
@@ -769,14 +768,61 @@ body {
   margin-left: auto;
   margin-right: auto;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mob-1x.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mob-1x.jpg");
+}
+
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .upmain {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("");
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .upmain {
+    min-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .upmain {
+    min-width: 768px;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tab-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab-1x.jpg");
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .upmain {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-tab-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-tab-2x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .upmain {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-position: center;
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desc-1x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desc-1x.jpg");
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .upmain {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-desc-2x.jpg");
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-desc-2x.jpg");
+  }
 }
 
 .upmain__title {
@@ -812,10 +858,43 @@ body {
   cursor: pointer;
 }
 
-.about {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .about__list:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about__list {
+    width: calc((100% - 30px) / 2);
+  }
+  .about__list:not(:nth-child(2n)) {
+    margin-right: 30px;
+  }
+  .about__list:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .about__list {
+    width: calc((100% - 90px ) / 4);
+  }
+  .about__list:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about__list {
@@ -834,6 +913,12 @@ body {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .about__item {
+    text-align: center;
+  }
+}
+
 .about__text {
   font-weight: normal;
   line-height: 1.71;
@@ -841,20 +926,14 @@ body {
 }
 
 .about__block {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 270px;
   height: 120px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
   border-radius: 4px;
   background-color: #f5f4fa;
+  text-align: center;
 }
 
 .about__icon {
@@ -863,18 +942,21 @@ body {
 }
 
 .work-content--dis {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 0;
-  width: calc((100% - 60) / 3);
+  display: none;
 }
 
-.work-content--dis:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .work-content--dis {
+    display: block;
+    padding-top: 0;
+    width: calc((100% - 60) / 3);
+  }
+  .work-content--dis:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
-.work-content__block {
+.work-content--dis .work-content__block {
   position: absolute;
   bottom: 0;
   min-width: 370px;
@@ -883,7 +965,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.work-content__text {
+.work-content--dis .work-content__text {
   color: #ffffff;
   font-weight: 700;
   line-height: 1.145;
@@ -891,7 +973,7 @@ body {
   text-align: center;
 }
 
-.work-item {
+.work-content--dis .work-item {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -899,18 +981,18 @@ body {
   margin-bottom: 50px;
 }
 
-.work-content {
+.work-content--dis .work-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: relative;
 }
 
-.work-content__list {
+.work-content--dis .work-content__list {
   width: calc((100% -60px) / 3);
 }
 
-.work-content__list:not(:last-child) {
+.work-content--dis .work-content__list:not(:last-child) {
   margin-right: 30px;
 }
 
