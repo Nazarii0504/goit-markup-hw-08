@@ -762,14 +762,52 @@ body {
   outline: 2px yellow solid;
 }
 
-.hero__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+@media screen and (max-width: 479px) {
+  .hero__list {
+    margin-bottom: 30px;
+  }
+  .hero__list .hero__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .hero__list .hero__item:nth-child(-n + 2) {
+    margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  .hero__list .hero__item:nth-child(4) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+  }
+  .hero__list .hero__item:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__list {
+    margin-bottom: 50px;
+  }
 }
 
 .hero__btn {
@@ -798,10 +836,6 @@ body {
 .hero__btn:hover {
   color: #ffffff;
   background-color: #2196f3;
-}
-
-.hero__item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .gallery {

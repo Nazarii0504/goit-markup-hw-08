@@ -2,6 +2,7 @@
   @media screen and (max-width: 479px) {
     &__block:not(:last-child) {
       margin-bottom: 30px;
+
     }
   }
 
@@ -46,7 +47,7 @@
   }
   .client__link {
     @include aligin-list();
-    min-width: 210px; 
+    min-width: 170px; 
     height: 92px;
     border: 1px solid $fill;
     fill:$fill;

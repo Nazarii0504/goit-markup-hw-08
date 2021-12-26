@@ -1,8 +1,42 @@
 .hero__list {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
+
+    .hero__item:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 40px;
+
+    .hero__item:nth-child(-n + 2) {
+      margin-right: 8px;
+      margin-bottom: 15px;
+    }
+    .hero__item:nth-child(4) {
+      margin-right: 8px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-bottom: 50px;
+
+    margin-bottom: 30px;
+
+    .hero__item:not(:last-child) {
+      margin-right: 8px;
+    }
   }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }}
+
   .hero__btn {
     padding-top: 6px;
     padding-right: 22px;
@@ -28,8 +62,8 @@
       background-color: $acent-color;
     }
   }
-  .hero__item:not(:last-child) {
-    margin-right: 8px;
-  }
+  // .hero__item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
   
  

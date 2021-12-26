@@ -1195,7 +1195,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  min-width: 210px;
+  min-width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
   fill: #afb1b8;
