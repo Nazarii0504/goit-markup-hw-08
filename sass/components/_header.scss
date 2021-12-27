@@ -18,7 +18,7 @@
 }
   .burger-btn {
     display: block;
-    // margin-left: auto;
+    margin-left: auto;
   
     padding: 0;
     background-color: transparent;
@@ -38,7 +38,7 @@
   
   .burger-btn__close {
     position: relative;
-    right: 15px;
+    right: 12px;
     top: 10px;
   }
   
@@ -51,10 +51,10 @@
   
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
   
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
   
       background-color: $third-text-color;
   
@@ -80,7 +80,7 @@
       padding-left: 40px;
       padding-bottom: 58px;
   
-      height: 100vh;
+      height: 100%;
     }
   
     @media screen and(min-width: 768px) {
@@ -154,7 +154,8 @@
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: $third-text-color;
+    color: rgba(117, 117, 117, 1);
+    ;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -205,7 +206,8 @@
     line-height: 1.16;
     letter-spacing: 0.02em;
 
-    color: $third-text-color;
+    color: rgba(117, 117, 117, 1);
+    ;
 
     @media screen and (max-width: 767px) {
       transition: color 250ms $animation-cubic-bezier, transform 250ms $animation-cubic-bezier,
@@ -213,9 +215,7 @@
 
       &:hover,
       &:focus {
-        transform: scale(1.1);
-        transform-origin: bottom left;
-        color: $acent-color;
+                color: $acent-color;
       }
     }
 
@@ -237,9 +237,10 @@
     }
   }
 
-  &__icon {
-    display: none;
-
+ 
+    
+.address__icon{
+  display: none;
     @media screen and (min-width: 768px) {
       display: flex;
 
@@ -247,11 +248,11 @@
       margin-right: 8px;
       fill: currentColor;
 
-      &--email {
+      .address__icon--email {
         width: 14px;
         height: 10px;
       }
-      &--phone {
+      .address__icon--phone {
         width: 10px;
         height: 14px;
       }
@@ -260,12 +261,12 @@
     @media screen and (min-width: 1200px) {
       margin-right: 10px;
 
-      &--email {
+      .address__icon--email {
         width: 16px;
         height: 12px;
       }
 
-      &--phone {
+      .address__icon--phone {
         height: 16px;
       }
 
@@ -274,8 +275,8 @@
         fill: $acent-color;
       }
     }
-  }
-}
+  }}
+
   
   
   
@@ -306,7 +307,7 @@
     }
   
     &__link {
-      font-weight: 500;
+      font-weight: 500px;
       font-size: 18px;
       line-height: 1.22;
       letter-spacing: 0.02em;
@@ -322,22 +323,27 @@
     @media screen and (min-width: 768px) {
       color: $acent-color;
   
-      &--аctive::after {
+      .current-portfolio::after,
+      .current-studio::after {
         content: '';
         position: absolute;
         bottom: 0;
         left: 0;
-        display: inline-block;
-        width: 100%;
-        border-radius: 4px;
+         border-radius: 4px;
         height: 4px;
-  
-        background-color: $acent-color;
+      width: 100%;
+        background-color:$acent-color;
+        transition: background-color 250ms $animation-cubic-bezier;
       }
+      
+          
     }
   }
   .address__icon--phone{
     height: 14px;
     width: 14px;
-    outline: 2px yellow solid;
+  }
+  .address__icon--email{
+    height: 14px;
+    width: 14px;
   }

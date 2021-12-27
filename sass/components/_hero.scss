@@ -1,22 +1,13 @@
 .upmain {
   min-width: 320px;
   height: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #2f303a;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 200px;
-    padding-bottom: 200px;
-    text-align: center;
-    background-image: linear-gradient(
-        to right,
-        rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url("../images/hero-mob-1x.jpg");
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  background-color: $second-bg-color;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/hero-mob-1x.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     & {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url('');
@@ -58,35 +49,57 @@
       }
     }
   }
+}
 
-    &__title {
-      margin-bottom: 30px;
-      font-weight: 900;
-      font-size: 44px;
-      line-height: 1.36;
-      text-align: center;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      color: $third-text-color;
-    }
-    &__button {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 32px;
-      padding-right: 32px;
-      border-radius: 4px;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-      background-color: $acent-color;
-      color: $third-text-color;
-      font-family: Roboto;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 1.87;
-      letter-spacing: 0.06em;
-      transition: box-shadow 250ms $animation-cubic-bezier;
-      cursor: pointer;
+.upmain__section {
+  text-align: center;
+  padding-top: 118px;
+  padding-bottom: 118px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  .upmain__title {
+    margin-bottom: 30px;
+
+    color: $main-color;
+
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 1.61;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 480px) {
+      font-size: 26px;
+      @media screen and (min-width: 1200px) {
+        font-size: 44px;
+      }
     }
   }
-  
 
-  
+  .upmain__button {
+    border: none;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: $hover-color;
+  color: $main-color;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+
+    padding-top: 10px;
+    padding-right: 32px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    transition: transform 250ms $animation-cubic-bezier;
+
+    
+  }
+}
