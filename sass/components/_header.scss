@@ -320,6 +320,7 @@
     }
   }
   .current {
+    color:$acent-color;
     @media screen and (min-width: 768px) {
       color: $acent-color;
   
