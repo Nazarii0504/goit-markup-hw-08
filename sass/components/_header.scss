@@ -152,14 +152,16 @@
   }}
   .navig__link {
     display: block;
-    
+    padding-top: 32px;
     padding-bottom: 5px;
     color: rgba(117, 117, 117, 1);
     ;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  
+    @media screen and (max-width: 767px){
+      padding-top: 5px;
+    }
   &:hover,
   &:focus {
     color: $acent-color;

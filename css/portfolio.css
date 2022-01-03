@@ -578,11 +578,18 @@ body {
 
 .navig__link {
   display: block;
+  padding-top: 32px;
   padding-bottom: 5px;
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+}
+
+@media screen and (max-width: 767px) {
+  .navig__link {
+    padding-top: 5px;
+  }
 }
 
 .navig__link:hover, .navig__link:focus {
