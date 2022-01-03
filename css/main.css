@@ -540,7 +540,6 @@ body {
   .navig__list .navig__link {
     position: relative;
     display: block;
-    padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
   }
@@ -579,7 +578,6 @@ body {
 
 .navig__link {
   display: block;
-  padding-top: 32px;
   padding-bottom: 5px;
   color: #757575;
   font-weight: 500;
