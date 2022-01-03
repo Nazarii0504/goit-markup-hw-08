@@ -509,13 +509,13 @@ body {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 767px) {
   .navig__list .navig__item:not(:last-child) {
     margin-bottom: 32px;
   }
 }
 
-@media screen and (max-width: 767px) and (min-width: 768px) {
+@media screen and (min-width: 767px) and (min-width: 768px) {
   .navig__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -761,16 +761,11 @@ body {
   }
 }
 
-.current {
-  color: #2196f3;
-}
-
 @media screen and (min-width: 768px) {
   .current {
     color: #2196f3;
   }
-  .current .current-portfolio::after,
-  .current .current-studio::after {
+  .current--active::after {
     content: '';
     position: absolute;
     bottom: 0;

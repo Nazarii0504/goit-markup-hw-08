@@ -93,7 +93,7 @@
   }}
 
   .navig__list {
-    @media screen and (max-width: 767px) {
+    @media screen and (min-width: 767px) {
       .navig__item:not(:last-child) {
         margin-bottom: 32px;
       }
@@ -319,13 +319,12 @@
       display: none;
     }
   }
+
   .current {
-    color:$acent-color;
-    @media screen and (min-width: 768px) {
+      @media screen and (min-width: 768px) {
       color: $acent-color;
-  
-      .current-portfolio::after,
-      .current-studio::after {
+       
+      &--active::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -340,6 +339,11 @@
           
     }
   }
+
+
+
+
+
   .address__icon--phone{
     height: 14px;
     width: 14px;
