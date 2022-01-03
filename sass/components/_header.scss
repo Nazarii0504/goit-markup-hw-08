@@ -93,7 +93,7 @@
   }}
 
   .navig__list {
-    @media screen and (min-width: 767px) {
+    @media screen and (max-width: 767px) {
       .navig__item:not(:last-child) {
         margin-bottom: 32px;
       }
