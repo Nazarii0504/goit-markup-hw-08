@@ -1,11 +1,17 @@
 .bottom {
     background: #2f303a;
-    padding: 60px 0;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
-  .code {
+
+  .product__link{
+    @media screen and (min-width: 1200px) {
     margin-bottom: 20px;
-    display: block;
-  }
+  }}
+  // .code {
+  //   margin-bottom: 20px;
+  //   display: inline-block;
+  // }
   .product__logotype-left {
     color: $acent-color;
     font-family: Raleway;
@@ -63,122 +69,212 @@
   &:focus {
     color: $third-text-color;
     }}
-  .footer__items{
-    width: 206px;
+  // .footer__items{
+  //   width: 206px;
     
-  }
+  // }
   
-  .bottom__container {
-    display: flex;
-  align-items:baseline;
-  justify-content: space-between;
-  }
+
+
+
+
+
+
+
+
+
   
-  .footer {
+  .bottom__container  {
+   text-align: center;
+
+  @media screen and (min-width: 768px) {
     display: flex;
-    padding-top: 20px;
-  }
-  .footer__text {
-      width: 700px;
-    line-height: 1.72;
-    size: 14px;
-    color: $third-text-color;
-  }
-  .footer__block:not(:last-child)
-  {
-    margin-right: 10px;
-  }
-  .footer__link {
-    display: flex;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    border-radius: 50%;
-    width: 44px;
-    height: 44px;
-    fill: $fill;
-   background-color:rgba(255, 255, 255, 0.1);
-   transition: background-color 250ms $animation-cubic-bezier,
-   fill 250ms $animation-cubic-bezier, box-shadow 250ms $animation-cubic-bezier;
-      &:hover,
-      &:focus {
-     background-color: $acent-color;
-     fill: $third-text-color;
-     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-       0px 2px 2px rgba(0, 0, 0, 0.12);
-   }
+    align-items: baseline;
   }
-  
-  
-  .footer__icon {
-    width: 20px;
-    height: 20px;}
-  
-    .third {
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+
+    text-align: start;
+  }
+}
+.product{
+   
+    @media screen and (min-width: 768px) {
+      margin-right: 165px;
+    }
+    @media screen and (min-width: 1200px) {
       display: flex;
       flex-direction: column;
-      align-items: baseline;
-    
-    
+      margin-right: 70px;
     }
-    
-  
-  
-  
-    .third__text {
-      margin-bottom: 20px;
-         
-        font-weight: 700px;
-      size: 14px;
-      line-height: 1.14;
-      text-transform: uppercase;
-      color: $third-text-color;
-      
-    }
-    
-    .third-form__inner {
-      margin-right: 12px;
-    }
-    
-    .third-form__input {
-      padding-top: 15px;
-      padding-right: 5px;
-      padding-bottom: 15px;
-      padding-left: 16px;
-    
-      min-width: 358px;
-    
-      color: rgba(255, 255, 255, 0.6);
-      background-color: transparent;
-    
-      font-size: 16px;
-      line-height: 1.25;
-    
-      outline: none;
-    
-      border: 1px solid rgba(255, 255, 255, 0.3);
-      border-radius: 4px;
-      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-    }
-    
-    .third-form__btn {
-      display: inline-flex;
-      align-items: center;
-    
-      padding-top: 10px;
-      padding-right: 28px;
-      padding-bottom: 10px;
-      padding-left: 29px;
-    
-      border: 1px solid transparent;
-    }
-    
-    .third-form__svg {
-      margin-left: 10px;
-    
-      width: 24px;
-      height: 24px;
-      fill: $third-text-color;
-    
-      
-  
   }
+  .product__wrap {
+    margin-bottom: 50px;
+  
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+      margin-bottom: 60px;
+    }
+  }
+  
+ .product__list:not(:last-child) {
+  margin-bottom: 8px;
+}
+.product__text{
+  color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
+
+  transition: color 250ms $animation-cubic-bezier;
+
+  &:hover,
+  &:focus {
+    color: #ffffff;
+  }
+}
+.footer__items{
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+    flex-direction: column;
+  }
+
+  .footer__text {
+    margin-bottom: 20px;
+
+    color: #ffffff;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer__block:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .footer__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+      transition: background-color 250ms $animation-cubic-bezier;
+
+      &:hover,
+      &:focus {
+        background-color: $acent-color;
+      }
+    }
+  }
+}
+.footer__icon{
+  width: 20px;
+  height: 20px;
+}
+.third{
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+
+    margin-left: 93px;
+  }
+}
+.third__text{
+  margin-bottom: 20px;
+
+  color:#ffffff ;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.third-form
+{
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.third-form__inner{
+  display: inline-block;
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
+}
+.third-form__input{
+  padding-top: 15px;
+  padding-right: 5px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+
+  width: 280px;
+
+  color: rgba(255, 255, 255, 0.6);
+  background-color: transparent;
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  outline: none;
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+}
+
+.third-form__btn{
+  width: 200px;
+  display: inline-flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+.third-form__svg{
+  margin-left: 10px;
+
+  width: 24px;
+  height: 24px;
+
+  fill: #ffffff;
+
+}
+
+
+ 

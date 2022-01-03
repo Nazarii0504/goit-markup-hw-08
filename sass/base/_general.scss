@@ -48,20 +48,20 @@ body {
     clip-path: inset(50%);
     margin: -1px;
   }
-  // .upmain__button {
-  //   padding-top: 10px;
-  //   padding-bottom: 10px;
-  //   padding-left: 32px;
-  //   padding-right: 32px;
-  //   border-radius: 4px;
-  //   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  //   background-color: $acent-color;
-  //   color: $third-text-color;
-  //   font-family: Roboto;
-  //   font-weight: bold;
-  //   font-size: 16px;
-  //   line-height: 1.87;
-  //   letter-spacing: 0.06em;
-  //   transition: box-shadow 250ms $animation-cubic-bezier;
+  .upmain__button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    background-color: $acent-color;
+    color: $third-text-color;
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    transition: box-shadow 250ms $animation-cubic-bezier;
  
-// }
+}
